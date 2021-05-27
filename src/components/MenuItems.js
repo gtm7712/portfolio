@@ -10,13 +10,15 @@ function MenuItems({menuItem}) {
                             <img src={item.image} alt="" />
                             <ul className="hover-items">
                                 <li>
-                                    <a href={item.link1}>{item.icon1}</a>
-                                    <a href={item.link2}>{item.icon2}</a>
+                                    <img src={item.icon1} alt="" onClick={() => window.open(item.link1, "_blank")} />
+                                </li>
+                                <li>
+                                    <img src={item.icon2} alt="" onClick={() => window.open(item.link2, "_blank")} />
                                 </li>
                             </ul>
                         </div>
                         <h5>{item.title}</h5>
-                        <p>Placeholder Paragraph</p>
+                        <p>{item.shortdesc}</p>
                     </div>
 
                 })

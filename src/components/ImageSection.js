@@ -28,7 +28,7 @@ function ImageSection() {
                         <p>: Agile (Scrum), Version Control (Git), Unit Testing, Continuous Integration</p>
                     </div>
                 </div>
-                <button className="btn">View Resume</button>
+                <button className="btn" onClick={() => alert("Soon.")}>View Resume</button>
             </div>
         </div>
     )

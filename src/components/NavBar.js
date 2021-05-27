@@ -25,7 +25,7 @@ function NavBar() {
                             Portfolio
                         </NavLink>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <NavLink to="/blog" exact activeClassName="active">
                             Blog
                         </NavLink>
@@ -34,7 +34,7 @@ function NavBar() {
                         <NavLink to="/contact" exact activeClassName="active">
                             Contact
                         </NavLink>
-                    </li>
+                    </li> */}
                 </ul>
                 <footer className="footer">
                 <p>

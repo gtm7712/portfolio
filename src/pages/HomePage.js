@@ -19,10 +19,10 @@ function HomePage() {
                 </p>
                 <div className="icons">
                     <Link className="icon-link" >
-                        <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" />
+                        <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" onClick={() => window.open("https://linkedin.com/in/giom", "_blank")} />
                     </Link>
                     <Link className="icon-link">
-                        <FontAwesomeIcon icon={faGithub} className="icon github" />
+                        <FontAwesomeIcon icon={faGithub} className="icon github" onClick={() => window.open("https://github.com/9vult", "_blank")} />
                     </Link>
                 </div>
             </header>

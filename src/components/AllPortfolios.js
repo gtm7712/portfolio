@@ -5,6 +5,9 @@ import port4 from '../img/portImages/port3.jpg';
 import port6 from '../img/portImages/port5.jpg';
 import port7 from '../img/portImages/port6.jpg';
 
+import github from '../img/github.svg';
+import youtube from '../img/youtube.svg';
+
 const portfolios = [
     {
         id: 1,
@@ -14,15 +17,16 @@ const portfolios = [
         icon1: 'G',
         icon2: 'Y',
         image: port1,
-        title: 'Autodesk Maya'
+        title: 'Autodesk Maya',
+        shortdesc: "A project"
     },
     {
         id: 2,
         category: 'Python',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
+        link1: 'https://www.github.com',
+        link2: 'https://www.youtube.com',
+        icon1: github,
+        icon2: youtube,
         image: port2,
         title: 'Python Web Scrapping'
     },
