@@ -13,9 +13,9 @@ function HomePage() {
                     <span> Giovanni Melchionne.</span>
                 </h1>
                 <p className="h-sub-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec porttitor sapien. 
-                    Proin a odio quis dui mollis cursus. Maecenas erat ligula, consequat id posuere gravida, 
-                    aliquam id eros. Donec pellentesque pharetra ipsum in dapibus. Morbi commodo, ligula quis dictum volutpat.
+                    I'm a 21-year-old Software Engineering and Japanese double major at 
+                    Rochester Institute of Technology who loves finding new ways to
+                    merge these two interests.
                 </p>
                 <div className="icons">
                     <Link className="icon-link" >

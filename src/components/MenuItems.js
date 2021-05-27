@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function MenuItems({menuItem}) {
     return (
@@ -9,12 +10,18 @@ function MenuItems({menuItem}) {
                         <div className="image-data">
                             <img src={item.image} alt="" />
                             <ul className="hover-items">
-                                <li>
-                                    <img src={item.icon1} alt="" onClick={() => window.open(item.link1, "_blank")} />
-                                </li>
-                                <li>
-                                    <img src={item.icon2} alt="" onClick={() => window.open(item.link2, "_blank")} />
-                                </li>
+                                {
+                                    item.links.map((linkGroup) => {
+                                        return <li key={linkGroup.id}>
+                                            <div className="icons">
+                                                <Link className="icon-link" onClick={() => window.open(linkGroup.link, "_blank")}>
+                                                    {linkGroup.icon}
+                                                </Link>
+                                            </div>
+                                            {/*<img src={linkGroup.icon} alt="" onClick={() => window.open(linkGroup.link, "_blank")} />*/}
+                                        </li>
+                                    })
+                                }
                             </ul>
                         </div>
                         <h5>{item.title}</h5>

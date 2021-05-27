@@ -1,84 +1,58 @@
-import port1 from '../img/portImages/maya-1.jpg';
-import port2 from '../img/portImages/port1.jpg';
-import port3 from '../img/portImages/port2.jpg';
-import port4 from '../img/portImages/port3.jpg';
-import port6 from '../img/portImages/port5.jpg';
-import port7 from '../img/portImages/port6.jpg';
+import vid2subs from '../img/portImages/vid2subs.png';
+import instachan from '../img/portImages/instachan.png';
+import mikureader from '../img/portImages/mikureader.png';
 
-import github from '../img/github.svg';
-import youtube from '../img/youtube.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 
 const portfolios = [
     {
         id: 1,
-        category: 'Animation',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        image: port1,
-        title: 'Autodesk Maya',
-        shortdesc: "A project"
+        category: 'Python',        
+        links: [
+            {
+                id: 1,
+                link: 'https://github.com/ninevult/assvision',
+                icon: <FontAwesomeIcon icon={faGithub} className="icon github" />
+            },
+            {
+                id: 2,
+                link: 'https://www.youtube.com/watch?v=HiMHkvtiyaM',
+                icon: <FontAwesomeIcon icon={faYoutube} className="icon youtube" />
+            }
+        ],
+        image: vid2subs,
+        title: 'Video2Subs',
+        shortdesc: 'Use Pillow.py to generate vector subtitles representing each frame of a video'
     },
     {
         id: 2,
-        category: 'Python',
-        link1: 'https://www.github.com',
-        link2: 'https://www.youtube.com',
-        icon1: github,
-        icon2: youtube,
-        image: port2,
-        title: 'Python Web Scrapping'
+        category: 'React.js',        
+        links: [
+            {
+                id: 1,
+                link: 'http://192.241.157.75:3000/',
+                icon: <FontAwesomeIcon icon={faGlobeAmericas} className="icon website" />
+            }
+        ],
+        image: instachan,
+        title: 'InstaChan',
+        shortdesc: 'Reddit-like image board prototype for Human-Centered Requirements & Design class'
     },
     {
         id: 3,
-        category: 'Animation',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        image: port3,
-        title: 'Autodesk Maya'
-    },
-    {
-        id: 4,
-        category: 'Javascript',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        image: port4,
-        title: 'Vanilla Javascript Website'
-    },
-    {
-        id: 5,
-        category: 'React Js',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        image: port6,
-        title: 'Getting Started With React'
-    },
-    {
-        id: 6,
-        category: 'React Js',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        image: port7,
-        title: 'Vanilla Javascript Website'
-    },
-    {
-        id: 7,
-        category: 'Test Port',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        image: port4,
-        title: 'Vanilla Javascript Website'
+        category: 'C#',
+        links: [
+            {
+                id: 1,
+                link: 'https://github.com/9vult/MikuReader',
+                icon: <FontAwesomeIcon icon={faGithub} className="icon github" />
+            }
+        ],
+        image: mikureader,
+        title: 'MikuReader',
+        shortdesc: 'C#/WinForms manga reader/downloader for Mangadex'
     }
 ]
 

@@ -10,9 +10,15 @@ function ImageSection() {
             <div className="about-info">
                 <h4>I am <span>Giovanni Melchionne</span></h4>
                 <p className="about-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec porttitor sapien. 
-                    Proin a odio quis dui mollis cursus. Maecenas erat ligula, consequat id posuere gravida, 
-                    aliquam id eros. Donec pellentesque pharetra ipsum in dapibus. Morbi commodo, ligula quis dictum volutpat.
+                    <p>
+                    I'm a 21-year-old Software Engineering and Japanese double major at
+                    Rochester Institute of Technology in Rochester, NY.
+                    </p>                    
+                    <p>
+                        During my time at RIT, I have participated in numerous team projects,
+                        and have garnered practical experience covering the entirety of the
+                        software development process, from project conception to release.
+                    </p>
                 </p>
                 <div className="about-details">
                     <div className="left-section">
