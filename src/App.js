@@ -29,21 +29,9 @@ function App() {
             <div className="main-content">
                 <div className="content">
                     <Switch>
-                        <Route path="/" exact>
-                            <HomePage />
-                        </Route>
-                        <Route path="/about" exact>
-                            <AboutPage />
-                        </Route>
-                        <Route path="/portfolio" exact>
-                            <PortfolioPage />
-                        </Route>
-                        <Route path="/contact" exact>
-                            <ContactPage />
-                        </Route>
-                        <Route path="/blog" exact>
-                            <BlogPage />
-                        </Route>
+                        <Route path='/'><HomePage /></Route>
+                        <Route path='/about'><AboutPage /></Route>
+                        <Route path='/portfolio'><PortfolioPage /></Route>
                     </Switch>
                 </div>
             </div>
